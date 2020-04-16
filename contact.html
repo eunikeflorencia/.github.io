@@ -1,31 +1,109 @@
-<!doctype html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="css/global.css" />
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schokoladé</title>
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html">Schokoladé</a>
+        </div>
+        <img src="./assets/images/logo-coklat.png" alt="Chocolate Icon">
+        <div class="hamburger" onclick="toggleMenu()">
+            <img src="assets/images/hamburger.png" alt="">
+            <ul id="hamburger-menu" class="hidden">
+                <li class="bg-pampas">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="bg-pampas">
+                    <a href="ourvariants.html">Our Variants</a>
+                </li>
+                <li class="bg-pampas">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <nav>
-      <main>
-        <a href="index.html" class="menu">Home</a>
-        <a href="about.html" class="menu">About</a>
-        <a href="contact.html" class="menu">Contact</a>
-        <div class="atas"></div>
-      </main>
+        <ul>
+            <li class="bg-pampas">
+                <a href="about.html">About</a>
+                <ul>
+                    <li>
+                        <a href="about.html#about-our-story">Our Story</a>
+                    </li>
+                    <li>
+                        <a href="about.html#about-mission-values">Mission & Values</a>
+                    </li>
+                    <li>
+                        <a href="about.html#about-our-farmers">Our Farmers</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="bg-pampas">
+                <a href="ourvariants.html">Our Variants</a>
+                <ul>
+                    <li>
+                        <a href="ourvariants.html#our-variants-best-sellers">Best Sellers</a>
+                    </li>
+                    <li>
+                        <a href="ourvariants.html#our-variants-chocolate-bars">Chocolate Bars</a>
+                    </li>
+                    <li>
+                        <a href="ourvariants.html#our-variants-cups-candy">Cups & Candy</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="bg-pampas">
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
     </nav>
-    <section class="full3">
-    <section>
-      <main>
-         <div class="melayang">
-        <h4>Contact</h1>
-          
-        <h2> Instagram   : @eunikeflorencia </h2>
-        <h2> WhatsApp : +62 811 1959 920 </h3>
-      </div>
 
+    <content id="contact" class="bg-pampas">
+        <h1>We are ready to serve you our sweetness!</h1>
+        <div>
+            <div>
+                <p>
+                    Our Location:<br />
+                    Jl. Kemang Raya No.8A, RT.13/RW.1, Bangka, Kec. Mampang,<br />
+                    Prpt., Kota Jakarta Selatan, Daerah Khusus Ibukota<br />
+                    Jakarta 12730<br />
+                    <br />
+                    Hours:<br />
+                    9 AM - 10 PM (Everyday)<br />
+                    <br />
+                    Phone/WhatsApp:<br />
+                    0813-8519-8601
+                </p>
+            </div>
+        </div>
+    </content>
+    <footer>
+        <div class="media">
+            <img src="assets/images/fb.png" alt="Fb">
+            <img src="assets/images/ig.png" alt="Ig">
+            <img src="assets/images/call.png" alt="Call">
+        </div>
+        <ul>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="ourvariants.html">Our Variants</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </footer>
+</body>
 
-      </main>
-    </section>
-    <section></section>
-  </body>
 </html>

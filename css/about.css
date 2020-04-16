@@ -1,0 +1,45 @@
+#about img{
+    width: 100%;
+    height: auto;
+}
+
+#about > div{
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    padding: 3em 5em;
+}
+
+#about > div > div{
+    margin: 20px;
+}
+
+p{
+    font-family: 'Proxima Nova Alt Light';
+    font-weight: 900;
+    padding: 40px 20px;
+    border-radius: 20px;
+    width: 650px;
+}
+
+#about h1{
+    font-size: 25pt;
+}
+
+@media only screen and (max-width: 768px){
+    #about > div{
+        padding: 15px;
+        width: auto;
+        display: block;
+        justify-content: center;
+    }
+
+    #about > div > div > img{
+        display: none;
+    }
+
+    p{
+        width: auto;
+        text-align: justify;
+    }
+}

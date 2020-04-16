@@ -1,0 +1,322 @@
+@import 'style.css';
+@import 'typography.css';
+
+@media only screen and (min-width: 768px) {
+    .first-content {
+        background-image: url("../assets/images/background-1.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 80vh;
+    }
+
+    .first-content > p {
+        width: 300px;
+        font-family: "Proxima Nova Alt Light";
+        font-size: 1.2rem;
+        text-align: justify;
+        font-weight: bolder;
+        position: relative;
+        top: 30%;
+        left: 25%;
+    }
+
+    #chocolate-text {
+        font-family: "Spaghetti";
+        color: #7a3b44;
+        font-size: 3em;
+        position: relative;
+        display: inline;
+        top: -30%;
+        left: 50%;
+    }
+
+    #yes-please {
+        width: 25%;
+        position: relative;
+        left: 28%;
+    }
+
+    .second-content {
+        margin: 100px 12vw 0px;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .second-content > .item-title {
+        font-size: 25pt;
+        display: inline-block;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    #truck {
+        display: inline-block;
+        width: 20%;
+        position: absolute;
+        right: 10%;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .yellow-offset {
+        margin-top: 100px;
+        background-color: #f5d568;
+        width: 100vw;
+        height: auto;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chocolate-list {
+        font-family: "Proxima Nova Alt Light";
+        /* background-color: lawngreen; */
+        margin-left: 20px;
+        margin-right: 20px;
+        position: relative;
+        max-width: 100%;
+        display: flex;
+        width: 1160px;
+        /* flex-wrap: wrap; */
+        overflow: hidden;
+        flex-direction: row;
+        justify-content: space-between;
+        top: -70px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .arrow-left {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-right: 30px solid #c14229;
+        cursor: pointer;
+    }
+
+    .arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 30px solid #c14229;
+        cursor: pointer;
+    }
+
+    .chocolate-card {
+        margin: 20px;
+    }
+
+    .chocolate-card:first-of-type {
+        margin: 20px;
+        margin-left: 0px;
+    }
+
+    .chocolate-card > img {
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        width: 260px;
+        height: 260px;
+    }
+
+    .chocolate-card > div:first-of-type {
+        background-color: #fbfbf9;
+    }
+
+    .chocolate-card > div {
+        padding: 30px 30px;
+        width: 200px;
+        max-width: 240px;
+        font-weight: bolder;
+        text-align: left;
+    }
+
+    .chocolate-card > div:last-of-type {
+        color: #ef703f;
+        background-color: #fbfbf9;
+        min-height: 100px;
+    }
+
+    .chocolate-card > div > .price {
+        color: #ef703f;
+    }
+
+    .images {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .images > img {
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    .images > img:not(:first-child) {
+        margin-left: 50px;
+    }
+
+    .yellow-offset > .images {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .first-content {
+        background-image: url("../assets/images/background-1.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 80vh;
+        /* background-color: teal; */
+    }
+
+    .first-content > p {
+        width: 300px;
+        font-family: "Proxima Nova Alt Light";
+        font-size: 1.2rem;
+        text-align: justify;
+        font-weight: bolder;
+        position: relative;
+        top: 30%;
+        left: 25%;
+    }
+
+    #chocolate-text {
+        font-family: "Spaghetti";
+        color: #7a3b44;
+        font-size: 3em;
+        position: relative;
+        display: inline;
+        top: -30%;
+        left: 50%;
+    }
+
+    #yes-please {
+        width: 25%;
+        position: relative;
+        left: 28%;
+    }
+
+    .second-content {
+        margin: 100px 0px 0px;
+        align-items: center;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .second-content > .item-title {
+        font-size: 25pt;
+        display: inline-block;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    #truck {
+        display: inline-block;
+        width: 20%;
+        position: absolute;
+        right: 10%;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .yellow-offset {
+        margin-top: 100px;
+        background-color: #f5d568;
+        width: 100vw;
+        height: auto;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chocolate-list {
+        font-family: "Proxima Nova Alt Light";
+        /* background-color: lawngreen; */
+        position: relative;
+        max-width: 100%;
+        display: flex;
+        width: 300px;
+        overflow: hidden;
+        flex-direction: row;
+        justify-content: space-between;
+        top: -70px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .arrow-left {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-right: 30px solid #c14229;
+        cursor: pointer;
+    }
+
+    .arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 30px solid #c14229;
+        cursor: pointer;
+    }
+
+    .chocolate-card {
+        margin: 30px;
+        margin-right: 0px;
+    }
+
+    .chocolate-card > img {
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        width: 240px;
+        height: 240px;
+    }
+
+    .chocolate-card > div:first-of-type {
+        background-color: #fbfbf9;
+    }
+
+    .chocolate-card > div {
+        padding: 30px 20px;
+        width: 200px;
+        max-width: 240px;
+        font-weight: bolder;
+        text-align: left;
+    }
+
+    .chocolate-card > div:last-of-type {
+        color: #ef703f;
+        background-color: #fbfbf9;
+        min-height: 100px;
+    }
+
+    .chocolate-card > div > .price {
+        color: #ef703f;
+    }
+
+    .images {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .images > img {
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    .images > img:not(:first-child) {
+        margin-left: 50px;
+    }
+
+    .yellow-offset > .images {
+        width: 100%;
+    }
+}

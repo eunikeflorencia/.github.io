@@ -1,47 +1,170 @@
-<!doctype html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="css/global.css" />
-  </head>
-  <body>
-     <nav>
-      <main>
-        <a href="index.html" class="menu">Home</a>
-        <a href="monospaced.html" class="menu">Monospaced Fonts</a>
-        <a href="underlining.html" class="menu">Underlining</a>
-        <a href="columns.html" class="menu">Columns</a>
-        <a href="widow.html" class="menu">Widow and Orphan Control</a>
-        <div class="atas"></div>
-      </main>
-    </nav>
-    <section class="full">
-     
-      <main>
-         <div class="ha">
-          <img src="hiya.png">
-        <h1>Typography is the visual component of the written word.</h1>
-        <h5> . </h5>
-        <h2>
-A text is a sequence of words. A text stays the same no matter how it’s rendered.
-Consider the sentence “I like pizza.” I can print that text on a piece of paper, or
-read it aloud, or save it in a file on my laptop. It’ll be the same text, just rendered
-different ways—visually, audibly, digitally.
-</h2>
-<h5> .</h5>
-        <h3> But when “I like pizza” is printed, typography gets involved. All visually displayed
-text involves typography—whether it’s on paper, a computer screen, or a billboard.
-Is typography an art? That’s like asking if photography is an art. Some
-photographers and typographers use techniques that raise their work to the level of
-art. But at their core, both photography and typography have a utilitarian function.
-The aesthetic component is separate. Being an effective typographer is more about
-good skills than good taste. And you can learn the skills.</h3>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
 
-        </main>
-      </section>
-      </main>
-    
-    </section>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schokoladé</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html">Schokoladé</a>
+        </div>
+        <img src="./assets/images/logo-coklat.png" alt="Chocolate Icon">
+        <div class="hamburger" onclick="toggleMenu()">
+            <img src="assets/images/hamburger.png" alt="">
+            <ul id="hamburger-menu" class="hidden">
+                <li class="bg-pampas">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="bg-pampas">
+                    <a href="ourvariants.html">Our Variants</a>
+                </li>
+                <li class="bg-pampas">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li class="bg-pampas">
+                <a href="about.html">About</a>
+                <ul>
+                    <li>
+                        <a href="about.html#about-our-story">Our Story</a>
+                    </li>
+                    <li>
+                        <a href="about.html#about-mission-values">Mission & Values</a>
+                    </li>
+                    <li>
+                        <a href="about.html#about-our-farmers">Our Farmers</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="bg-pampas">
+                <a href="ourvariants.html">Our Variants</a>
+                <ul>
+                    <li>
+                        <a href="ourvariants.html#our-variants-best-sellers">Best Sellers</a>
+                    </li>
+                    <li>
+                        <a href="ourvariants.html#our-variants-chocolate-bars">Chocolate Bars</a>
+                    </li>
+                    <li>
+                        <a href="ourvariants.html#our-variants-cups-candy">Cups & Candy</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="bg-pampas">
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <content>
+        <div class="first-content">
+            <p>
+                Welcome to the sweetest time of the day. As a company rooted in cocoa, our mission is to create a more
+                beautiful, compassionate, and enduring world by responsibly making delicious and inspiring products for
+                everyone.
+            </p>
+            <img id="yes-please" src="./assets/images/yes-please.jpg" alt="Yes Please">
+        </div>
+        <div class="second-content">
+            <div class="sub-header">
+                Our Signature Chocolate
+            </div>
+            <img id="truck" src="./assets/images/truck.png" alt="Truck">
+        </div>
+        <div class="yellow-offset">
+            <div class="chocolate-list">
+                <div class="chocolate-card">
+                    <img src="./assets/images/peanut.jpg" alt="Peanut">
+                    <div>Dark Choco Peanut Butter
+                        <div class="price">Rp. 40.000</div>
+                    </div>
+                    <div>
+                        We improved the classic peanut butter cup by pairing our rich dark chocolate (55%) with
+                        organic
+                        peanut butter.
+                    </div>
+                </div>
+                <div class="chocolate-card">
+                    <img src="./assets/images/seasalt.jpg" alt="Sea Salt">
+                    <div>Sea Salt
+                        <div class="price">Rp. 40.000</div>
+                    </div>
+                    <div>
+                        Made from rich, organic dark chocolate (70%) with a pinch of sea salt, the perfect
+                        com-bination
+                        of flavors.
+                    </div>
+                </div>
+                <div class="chocolate-card">
+                    <img src="./assets/images/almondbutter.jpg" alt="Almond Butter">
+                    <div>Almond Butter Cup
+                        <div class="price">Rp. 40.000</div>
+                    </div>
+                    <div>
+                        The slight crunch of almond butter, a hint of sea salt wrapped in a dark chocolate (55%)
+                        shell
+                        make this a perfect treat.
+                    </div>
+                </div>
+                <div class="chocolate-card">
+                    <img src="./assets/images/toffee.jpg" alt="Toffee">
+                    <div>Salted Toffee
+                        <div class="price">Rp. 40.000</div>
+                    </div>
+                    <div>
+                        A pinch of sea salt, buttery toffee, and rich dark choco-late (55%) all blend perfectly in
+                        this
+                        ode to deliciousness.
+                    </div>
+                </div>
+            </div>
+            <div class="images">
+                <img src="./assets/images/1920x700.jpg" alt="Background 2">
+                <img src="./assets/images/2184x700.jpg" alt="Background 2">
+            </div>
+        </div>
+        <div class="third-content">
+            <div class="star-container">
+                <img class="star" src="./assets/images/star.png" alt="">
+                <img class="star" src="./assets/images/star.png" alt="">
+                <img class="star" src="./assets/images/star.png" alt="">
+                <img class="star" src="./assets/images/star.png" alt="">
+                <img class="star" src="./assets/images/star.png" alt="">
+            </div>
+            <div class="text">
+                <p>"One of the best chocolate in town!"</p>
+                <p>- Pablo Marcus</p>
+            </div>
+        </div>
+    </content>
+    <footer>
+        <div class="media">
+            <img src="assets/images/fb.png" alt="Fb">
+            <img src="assets/images/ig.png" alt="Ig">
+            <img src="assets/images/call.png" alt="Call">
+        </div>
+        <ul>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="ourvariants.html">Our Variants</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
 </html>

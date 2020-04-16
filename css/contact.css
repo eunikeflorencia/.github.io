@@ -1,0 +1,45 @@
+@import 'style.css';
+@import 'typography.css';
+
+#contact > h1{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#contact > div {
+    display: block;
+    background-image: url("../assets/images/background-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 500px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#contact > div > div {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#contact h1{
+    font-size: 25pt;
+}
+
+@media only screen and (max-width: 768px){
+    #contact > div{
+        min-height: 200px;
+    }
+
+    #contact > div > div {
+        width: 300px;
+    }
+
+    #contact p{
+        font-size: 0.6em;
+    }
+}

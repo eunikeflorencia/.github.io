@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schokoladé</title>
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/ourvariants.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html">Schokoladé</a>
+        </div>
+        <img src="./assets/images/logo-coklat.png" alt="Chocolate Icon">
+        <div class="hamburger" onclick="toggleMenu()">
+            <img src="assets/images/hamburger.png" alt="">
+            <ul id="hamburger-menu" class="hidden">
+                <li class="bg-pampas">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="bg-pampas">
+                    <a href="ourvariants.html">Our Variants</a>
+                </li>
+                <li class="bg-pampas">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li class="bg-pampas">
+                <a href="about.html">About</a>
+                <ul>
+                    <li>
+                        <a href="about.html#about-our-story">Our Story</a>
+                    </li>
+                    <li>
+                        <a href="about.html#about-mission-values">Mission & Values</a>
+                    </li>
+                    <li>
+                        <a href="about.html#about-our-farmers">Our Farmers</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="bg-pampas">
+                <a href="ourvariants.html">Our Variants</a>
+                <ul>
+                    <li>
+                        <a href="ourvariants.html#our-variants-best-sellers">Best Sellers</a>
+                    </li>
+                    <li>
+                        <a href="ourvariants.html#our-variants-chocolate-bars">Chocolate Bars</a>
+                    </li>
+                    <li>
+                        <a href="ourvariants.html#our-variants-cups-candy">Cups & Candy</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="bg-pampas">
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <content>
+        <div>
+            <div class="second-content">
+                <div id="our-variants-best-sellers" class="item-title">
+                    Best Sellers
+                </div>
+            </div>
+            <div class="yellow-offset">
+                <div id="list-best-seller" class="chocolate-list">
+                    <div class="chocolate-card">
+                        <img src="./assets/images/peanut.jpg" alt="Peanut">
+                        <div>Dark Choco Peanut Butter
+                            <div class="price">Rp. 40.000</div>
+                        </div>
+                        <div>
+                            We improved the classic peanut butter cup by pairing our rich dark choco (55%) with
+                            organic
+                            peanut butter.
+                        </div>
+                    </div>
+                    <div class="chocolate-card">
+                        <img src="./assets/images/seasalt.jpg" alt="Sea Salt">
+                        <div>Sea Salt
+                            <div class="price">Rp. 40.000</div>
+                        </div>
+                        <div>
+                            Made from rich, organic dark chocolate (70%) with a pinch of sea salt, the perfect
+                            com-bination
+                            of flavors.
+                        </div>
+                    </div>
+                    <div class="chocolate-card">
+                        <img src="./assets/images/almondbutter.jpg" alt="Almond Butter">
+                        <div>Almond Butter Cup
+                            <div class="price">Rp. 40.000</div>
+                        </div>
+                        <div>
+                            The slight crunch of almond butter, a hint of sea salt wrapped in a dark chocolate (55%)
+                            shell
+                            make this a perfect treat.
+                        </div>
+                    </div>
+                    <div class="chocolate-card">
+                        <img src="./assets/images/toffee.jpg" alt="Toffee">
+                        <div>Salted Toffee
+                            <div class="price">Rp. 40.000</div>
+                        </div>
+                        <div>
+                            A pinch of sea salt, buttery toffee, and rich dark choco-late (55%) all blend perfectly in
+                            this
+                            ode to deliciousness.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="second-content">
+                <div id="our-variants-chocolate-bars" class="item-title">
+                    Chocolate Bars
+                </div>
+            </div>
+            <div class="yellow-offset">
+                <div class="arrow-left" onclick="scrollToLeft('list-chocolate-bars')"></div>
+                <div id="list-chocolate-bars" class="chocolate-list">
+                    <div class="chocolate-card">
+                        <img src="./assets/images/peanut.jpg" alt="Peanut">
+                        <div>Dark Choco Peanut Butter
+                            <div class="price">Rp. 40.000</div>
+                        </div>
+                        <div>
+                            We improved the classic peanut butter cup by pairing our rich dark choco (55%) with
+                            organic
+                            peanut butter.
+                        </div>
+                    </div>
+                    <div class="chocolate-card">
+                        <img src="./assets/images/seasalt.jpg" alt="Sea Salt">
+                        <div>Sea Salt
+                            <div class="price">Rp. 40.000</div>
+                        </div>
+                        <div>
+                            Made from rich, organic dark chocolate (70%) with a pinch of sea salt, the perfect
+                            com-bination
+                            of flavors.
+                        </div>
+                    </div>
+                    <div class="chocolate-card">
+                        <img src="./assets/images/almondbutter.jpg" alt="Almond Butter">
+                        <div>Almond Butter Cup
+                            <div class="price">Rp. 40.000</div>
+                        </div>
+                        <div>
+                            The slight crunch of almond butter, a hint of sea salt wrapped in a dark chocolate (55%)
+                            shell
+                            make this a perfect treat.
+                        </div>
+                    </div>
+                    <div class="chocolate-card">
+                        <img src="./assets/images/toffee.jpg" alt="Toffee">
+                        <div>Salted Toffee
+                            <div class="price">Rp. 40.000</div>
+                        </div>
+                        <div>
+                            A pinch of sea salt, buttery toffee, and rich dark choco-late (55%) all blend perfectly in
+                            this
+                            ode to deliciousness.
+                        </div>
+                    </div>
+
+                    <!-- TEST -->
+                    <div class="chocolate-card">
+                        <img src="./assets/images/coconut.jpg" alt="Toffee">
+                        <div>Coconut Bar
+                            <div class="price">Rp. 40.000</div>
+                        </div>
+                        <div>
+                            Celebrate spring with tropical coconut and crunchy almonds in smooth, rich 70% dark chocolate – nutty and refreshing.
+                        </div>
+                    </div>
+                    <!-- TEST -->
+                </div>
+                <div class="arrow-right" onclick="scrollToRight('list-chocolate-bars')"></div>
+            </div>
+        </div>
+        <div>
+            <div class="second-content">
+                <div id="our-variants-cups-candy" class="item-title">
+                    Cups & Candy
+                </div>
+            </div>
+            <div class="yellow-offset">
+                <div class="arrow-left" onclick="scrollToLeft('cups-and-candy')"></div>
+                <div id="cups-and-candy" class="chocolate-list">
+                    <div class="chocolate-card">
+                        <img src="./assets/images/Peppermint.jpg" alt="Peanut">
+                        <div>Peppermint Cocoa
+                            <div class="price">Rp. 25.000</div>
+                        </div>
+                        <div>
+                            We improved the classic peppermint cup by pairing our rich dark chocolate (55%) with
+                            organic
+                            chocolate.
+                        </div>
+                    </div>
+                    <div class="chocolate-card">
+                        <img src="./assets/images/cocobites.jpg" alt="Sea Salt">
+                        <div>Coconut Bites
+                            <div class="price">Rp. 25.000</div>
+                        </div>
+                        <div>
+                            A combination of chewy sustainably-sourced coconut and dark chocolate make this a sweet treat that's perfect for anyone.
+                        </div>
+                    </div>
+                    <div class="chocolate-card">
+                        <img src="./assets/images/almond.jpg" alt="Almond Butter">
+                        <div>Almond Coconut Bites
+                            <div class="price">Rp. 25.000</div>
+                        </div>
+                        <div>
+                            Rich. Chewy. Salty. and A bit crunchy, too. We thought of everything and you'll feel the explosion in your mouth.
+                        </div>
+                    </div>
+                    <div class="chocolate-card">
+                        <img src="./assets/images/double.jpg" alt="Toffee">
+                        <div>Double Choco Bites
+                            <div class="price">Rp. 25.000</div>
+                        </div>
+                        <div>
+                            Super dark and super decadent. Rich chocolate and creamy peanut butter blended together, everything you needed.
+                        </div>
+                    </div>
+
+                    <!-- TEST -->
+                    <div class="chocolate-card">
+                        <img src="./assets/images/coffee.jpg" alt="Toffee">
+                        <div>Coffee & Cream Cup
+                            <div class="price">Rp. 25.000</div>
+                        </div>
+                        <div>
+                            A meltaway dark chocolate filling infused with bold coffee notes in a creamy milk chocolate shell.
+                        </div>
+                    </div>
+                    <!-- TEST -->
+                </div>
+                <div class="arrow-right" onclick="scrollToRight('cups-and-candy')"></div>
+            </div>
+        </div>
+        <div>
+            <div class="second-content"></div>
+        </div>
+    </content>
+    <footer>
+        <div class="media">
+            <img src="assets/images/fb.png" alt="Fb">
+            <img src="assets/images/ig.png" alt="Ig">
+            <img src="assets/images/call.png" alt="Call">
+        </div>
+        <ul>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="ourvariants.html">Our Variants</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

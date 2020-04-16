@@ -1,0 +1,193 @@
+@import 'style.css';
+@import 'typography.css';
+
+.first-content{
+    background-image: url('../assets/images/background-1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    /* background-color: teal; */
+}
+
+.first-content > p{
+    width: 300px;
+    font-family: 'Proxima Nova Alt Light';
+    font-size: 16.5pt;
+    text-align: left;
+    font-weight: bolder;
+    /* position: relative; */
+    /* top: 30%; */
+    /* left: 25%; */
+}
+
+#chocolate-text{
+    font-family: 'Spaghetti';
+    color: #7a3b44;
+    font-size: 3em;
+    position: relative;
+    display: inline;
+    top: -30%;
+    left: 50%;
+}
+
+#yes-please{
+    height: 330px;
+}
+
+.second-content{
+    margin: 100px 120px;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+}
+
+.second-content > .sub-header{
+    font-size: 30pt;
+    /* font-size: 21pt; */
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+}
+
+#truck{
+    display: inline-block;
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.yellow-offset{
+    margin-top: 170px;
+    background-color:#f5d568;
+    width: 100vw;
+    height: auto;
+    max-width: 100%;
+}
+.chocolate-list{
+    font-family: 'Proxima Nova Alt Light';
+    /* background-color: lawngreen; */
+    
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: -70px;
+    text-align: center;
+}
+
+.chocolate-card{
+    margin: 20px;
+}
+
+.chocolate-card > img{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    width: 260px;
+    height: 260px;
+}
+
+.chocolate-card > div:first-of-type{
+    background-color: #fbfbf9;
+}
+
+.chocolate-card > div{
+    padding: 30px 30px;
+    width: 200px;
+    height: 70px;
+    max-width: 240px;
+    font-size: 14pt;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.chocolate-card > div:last-of-type{
+    color: #ef703f;
+}
+
+.chocolate-card > div > .price{
+    color: #ef703f;
+}
+
+.images{
+    display: flex;
+    overflow: hidden;
+}
+
+.images > img{
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.images > img:not(:first-child){
+    margin-left: 50px;
+}
+
+.yellow-offset > .images{
+    width: 100%;
+}
+
+.third-content{
+    padding: 150px 0px;
+}
+
+.third-content > .text{
+    font-size: 21pt;
+    text-align: center;
+    line-height: 20px;
+}
+
+.star-container{
+    display: flex;
+    justify-content: center;
+}
+
+.star{
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 768px){
+    .first-content{
+        height: 40vh;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-content > p{
+        position: static;
+        font-size: 11pt;
+    }
+
+    .second-content{
+        margin: 0px;
+        text-align: center;
+    }
+
+    .yellow-offset{
+        margin-top: 100px;
+    }
+
+    #chocolate-text, #yes-please, #truck{
+        display: none;
+    }
+
+    .images{
+        display: none;
+    }
+
+    .third-content > .text{
+        font-size: 16.5pt;
+        text-align: center;
+        line-height: 20px;
+    }
+}

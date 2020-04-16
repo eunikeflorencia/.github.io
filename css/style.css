@@ -1,0 +1,190 @@
+@import url('typography.css');
+
+.bg-mandarin-pearl {
+    background-color: #ef703f;
+}
+
+.bg-pampas {
+    background-color: #fbfbf9;
+}
+
+.bg-orange-yellow {
+    background-color: #f5d568;
+}
+
+.bg-tall-poppy {
+    background-color: #c14229;
+}
+
+.bg-fair-pink {
+    background-color: #ffeae6;
+}
+
+body,
+html {
+    font-family: "Recoleta Alt Bold";
+    margin: 0;
+    padding: 0;
+    color: #c14229;
+}
+
+header {
+    font-size: 18pt;
+    padding: 20px;
+    text-align: center;
+    background-color: #f5d568;
+}
+
+header > div,
+img {
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+}
+
+header > img {
+    width: 40px;
+}
+
+header > .hamburger > img {
+    width: 30px;
+}
+
+header > .hamburger > ul {
+    z-index: 1;
+    font-size: 16pt;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: right;
+    position: absolute;
+    right: 20px;
+}
+
+header > .hamburger > ul > li {
+    border: 1px solid #ffeae6;
+}
+
+footer {
+    padding: 50px;
+    background-color: #f5d568;
+}
+
+footer > ul {
+    color: black;
+    margin: 0;
+}
+
+footer > ul > li {
+    font-size: 18pt;
+    display: table;
+    padding: 10px;
+    width: 250px;
+}
+
+footer > .media {
+    float: right;
+}
+
+footer > .media > img {
+    background-color: #c14229;
+    border-radius: 50px;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.hidden {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (min-width: 768px) {
+    header > .hamburger {
+        display: none;
+    }
+
+    nav > ul {
+        text-align: center;
+        margin: 20px 0px;
+        padding: 0;
+        font-size: 18pt;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        background-color: #fbfbf9;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+        padding: 2px 0px;
+        width: 220px;
+        cursor: pointer;
+    }
+
+    nav > ul > li:hover ul {
+        display: block;
+    }
+
+    nav > ul > li:not(:first-child) {
+        border-left: 1px solid #c14229;
+    }
+
+    nav > ul > li > ul {
+        z-index: 1;
+        font-size: 16pt;
+        display: none;
+        margin-top: 2px;
+        padding: 0;
+        position: absolute;
+    }
+
+    nav > ul > li > ul > li {
+        padding: 5px 0px;
+        border: 1px solid pink;
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header > .hamburger {
+        float: right;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #about > div{
+        padding: 15px;
+        width: auto;
+        display: block;
+        justify-content: center;
+    }
+
+    #about > div > div > img{
+        display: none;
+    }
+
+    #about p{
+        width: auto;
+        text-align: justify;
+    }
+
+    footer > .media {
+        float: none;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    footer > ul {
+        padding: 0;
+    }
+}
